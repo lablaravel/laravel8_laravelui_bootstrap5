@@ -4,8 +4,12 @@ Criando um projeto usando versão 8 do laravel com bootstrap 5 e larave/ui.
 # Linguagens e Frameworks
  * [Laravel 8](https://laravel.com/docs/8.x/releases)
  * [Laravel/UI](https://github.com/laravel/ui)  
- * [Bootstrap](https://inertiajs.com/)
+ * [Bootstrap](https://getbootstrap.com/)
 
+# Changelog
+  v0.1
+   - Instalar Laravel/UI --auth bootstrap
+   - Atualizar para bootstrap 5
   
 
 
