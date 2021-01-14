@@ -9,6 +9,7 @@ Criando um projeto usando versão 8 do laravel com bootstrap 5 e larave/ui.
 # Changelog
 
   v0.2 - Em desenvolvimento
+   - Configuração do Template Adminkit[]
    - Mudar tela de login []
    - Mudar Tela de Cadastro []
 
