@@ -1,4 +1,7 @@
 <!doctype html>
+
+<!-- link exemplo de login https://demo.adminkit.io/pages-sign-up.html --> 
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -80,6 +83,8 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        
     </div>
 </body>
 </html>
