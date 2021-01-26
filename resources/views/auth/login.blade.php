@@ -57,11 +57,11 @@
 									<div class="text-center">
 										<img src="/images/avatar/avatar1.png" width="132" height="132" />
 									</div>
-									<form method="POST" action="{{ route('login') }}">
+									<form method="POST" action="{{ route('login') }}" novalidate >
                                     @csrf
 										<div class="mb-3">
 											<label class="form-label">E-mail</label>
-											<input class="form-control form-control-lg" type="email" name="email" placeholder="Digite o e-mail" value="{{ old('email') }}" required autocomplete="email" autofocus/>
+											<input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" placeholder="Digite o e-mail" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                                             @error('email')
                                                 <span class="alert alert-danger" role="alert">
                                                     <strong>{{ $message }}</strong>
