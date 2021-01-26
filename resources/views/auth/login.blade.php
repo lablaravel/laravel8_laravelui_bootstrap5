@@ -57,21 +57,27 @@
 									<div class="text-center">
 										<img src="/images/avatar/avatar1.png" width="132" height="132" />
 									</div>
-									<form method="POST" action="{{ route('login') }}" novalidate >
+									<form method="POST" action="{{ route('login') }}">
                                     @csrf
 										<div class="mb-3">
 											<label class="form-label">E-mail</label>
-											<input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" placeholder="Digite o e-mail" value="{{ old('email') }}" required autocomplete="email" autofocus/>
+											<input id="email" class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" placeholder="Digite o e-mail" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                                             @error('email')
                                                 <span class="alert alert-danger" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
                                         </div>
+
 										<div class="mb-3">
 											<label class="form-label">Senha</label>
-											<input class="form-control form-control-lg" type="password" name="password" placeholder="Digite a sua senha" />
-											<small>
+											<input id="password" type="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" placeholder="Digite a sua senha" value="{{ old('password')}}"  required autocomplete="current-password"/>
+                                            @error('password')
+                                            <span class="alert alert-danger" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                            <small>
 												<a href="pages-reset-password.html">Esqueceu a senha?</a>
 											</small>
 										</div>

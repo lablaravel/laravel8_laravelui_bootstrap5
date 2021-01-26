@@ -14,7 +14,7 @@ return [
     */
 
     'failed' => 'Seu e-mail ou senha estão errados',
-    'password' => 'The provided password is incorrect.',
+    'password' => 'Sua senha está incorreta.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];
