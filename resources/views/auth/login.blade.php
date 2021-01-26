@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- 
+    O que está faltando
+        recuperar senha o link
+        clica em imagem para voltar para página inicial
 
+    -->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
