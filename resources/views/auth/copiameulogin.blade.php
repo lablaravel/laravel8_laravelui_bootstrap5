@@ -15,21 +15,19 @@
 
 	<title>Login | Laravel Dashboard</title>
 
-     <!-- CSRF Token -->
-     <meta name="csrf-token" content="{{ csrf_token() }}">
+	<link href="css/app.css" rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/appadminkit.js')}}" defer></script>
+	<!-- BEGIN SETTINGS -->
+	<script src="js/settings.js"></script>
+	<!-- END SETTINGS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/appadminkit.css') }}" rel="stylesheet">
-	</head>
+  gtag('config', 'UA-120946860-10', { 'anonymize_ip': true });
+</script></head>
 <!--
   HOW TO USE: 
   data-theme: default (default), dark, light
@@ -57,17 +55,11 @@
 									<div class="text-center">
 										<img src="/images/avatar/avatar1.png" width="132" height="132" />
 									</div>
-									<form method="POST" action="{{ route('login') }}">
-                                    @csrf
+									<form>
 										<div class="mb-3">
 											<label class="form-label">E-mail</label>
-											<input class="form-control form-control-lg" type="email" name="email" placeholder="Digite o e-mail" value="{{ old('email') }}" required autocomplete="email" autofocus/>
-                                            @error('email')
-                                                <span class="alert alert-danger" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
+											<input class="form-control form-control-lg" type="email" name="email" placeholder="Digite o e-mail" />
+										</div>
 										<div class="mb-3">
 											<label class="form-label">Senha</label>
 											<input class="form-control form-control-lg" type="password" name="password" placeholder="Digite a sua senha" />
@@ -84,9 +76,7 @@
 											</label>
 										</div>
 										<div class="text-center mt-3">
-											<button type="submit" class="btn btn-primary btn-sn text-white" role="button">
-                                                {{__('Entrar')}}
-                                            </button>
+											<a href="index.html" class="btn btn-primary btn-sn text-white" role="button">Entrar</a>
 											<!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
 										</div>
 									</form>
